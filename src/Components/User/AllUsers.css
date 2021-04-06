@@ -1,0 +1,22 @@
+.alluser{
+    padding-top: 15vh;
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.alluser-heading{
+    color:var(--third);
+    border-bottom: 1px solid var(--secondary);
+    margin-bottom: 2em;
+}
+.alluser-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

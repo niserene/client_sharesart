@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Baloo Tammudu 2', cursive; */
+    /* font-family: 'Merienda', cursive; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root{
+
+    --primary:#17191d;
+    --secondary:#f8f8f8;
+    --third:#da1e85;
+    --fourth: rgb(12, 199, 137);
+    --fifth:#6474d1;
+    --first : rgba(0,0,0,0.8);
+    --second : #f8f8f8;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background:var(--primary);
+}
+body::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+    border-radius: 20px;
+}
+.component-heading{
+    min-width: 20%;
+    color:var(--third);
+    text-align: center;
+    margin:2em auto;
+    font-weight: 700;
+    border-bottom: 1px solid var(--secondary);
+    
+}
+
+
+.mr10{
+    margin-right: 10px;
+}
+.ml5{
+    margin-left: 5px;
+}
+.ml15{
+    margin-left: 15px;
+}
+.mr15{
+    margin-right: 15px;
+}
+.mr5{
+    margin-right:5px;
+}
+
+.mb1{
+    margin-bottom: 0.8em;
+}

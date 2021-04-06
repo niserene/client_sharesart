@@ -1,0 +1,101 @@
+
+.contact-container{
+    padding-top: 20vh;
+    min-height: 100vh;
+    max-width: 100vw;
+    background: var(--primary);
+    color: var(--secondary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact-heading{
+    display: flex;
+    flex-direction: column;
+    min-width: 40%;
+    min-height: 100%;
+    background: url('https://res.cloudinary.com/nishantdev/image/upload/v1617480329/undraw_real_time_collaboration_c62i_zjylly.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: var(--third);
+}
+.contact-soc-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contact-icon{
+    margin:1em;
+}
+
+.contact-form{
+    min-width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding:2em;
+}
+.contact-form-item{
+    min-width: 100%;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    transition: all ease 2s;
+}
+.contact-input{
+    color:var(--secondary);
+    outline: none;
+    border: none;
+    width: 100%;
+    background: rgba(20, 14, 14, 0.7);
+    padding: 0.8em;
+    border-radius: 0px 50px 50px 50px;
+    letter-spacing: 1px;
+}
+.contact-input:focus{
+    box-shadow: 2px 5px 10px rgba(226, 219, 219, 0.5);
+}
+.contact-checkbox{
+    margin-right: 1em;
+    cursor: pointer;
+}
+.contact-label{
+    color:var(--fifth);
+}
+.contact-btn{
+    outline: none;
+    background: transparent;
+    border: none;
+    color: var(--third);
+    padding:1em 2em;
+    border-radius: 20px;
+    margin-right: 1em;
+    box-shadow: 0 15px 20px rgba(0,0,0,1);
+    transition: all ease 500ms;
+}
+.contact-btn:hover{
+    cursor: pointer;
+    background: var(--third);
+    color:var(--secondary);
+}
+
+
+@media screen and (max-width:960px){
+
+    .contact-container{
+        flex-direction: column;
+    }
+    .contact-heading{
+        min-width: 100%;
+        min-height: 100vh;
+        padding: 0;
+    }
+    .contact-form{
+        padding:0.5em;
+        min-width: 100%;
+    }
+}

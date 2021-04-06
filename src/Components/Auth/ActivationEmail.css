@@ -1,0 +1,49 @@
+
+.activation-container{
+    display: flex;
+    padding-top: 20vh;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 100vw;
+    background: var(--primary);
+}
+.activation-card{
+    width: 40%;
+    margin: auto;
+    flex-direction: column;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.5);
+    padding:1em 2em;
+    background: rgb(9, 6, 12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 200px;
+    transition: all ease-in 1s;
+}
+.activation-card-heading{
+    border-bottom: 1px solid var(--secondary);
+    color: var(--fourth) !Important;
+}
+.activation-card-info{
+    text-align: center;
+    color: var(--secondary);
+}
+.activation-card-item{
+    margin-bottom: 2em;
+}
+.activation-card-item{
+    color:var(--secondary);
+}
+
+
+@media screen and (max-width:960px)
+{
+    .activation-container{
+        padding: 0;
+    }
+    .activation-card{
+        width: 100%;
+    }
+}

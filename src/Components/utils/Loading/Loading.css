@@ -1,0 +1,42 @@
+
+.loading-container{
+    padding:10vh;
+    min-height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary);
+}
+.spin-section{
+    height:90vh;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.spinner-item{
+    font-size: 6em;
+    color: rgb(199, 167, 187);
+}
+.spinner-item-bg{
+    width: 60%;
+    height: 100%;
+    background: url('https://res.cloudinary.com/nishantdev/image/upload/v1617091699/undraw_in_progress_ql66_vyukbf.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media screen and (max-width:960px)
+{
+    .spin-section{
+        padding-top: 20vh;
+        width: 100%;
+        height: 90vh;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+    }
+}
