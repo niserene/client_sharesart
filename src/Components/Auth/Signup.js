@@ -331,7 +331,7 @@ class Signup extends React.Component{
                         onSuccess={this.responseGoogle}
                         onFailure={this.responseGoogle}
                         cookiePolicy={'single_host_origin'}
-                        className="googleBtn"
+                        // className="googleBtn"
                     />
                     </div>
                 </div>       
