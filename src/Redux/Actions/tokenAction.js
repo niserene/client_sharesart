@@ -32,6 +32,7 @@ export const getAccessToken = () => (dispatch) => {
         dispatch(getUserInfo(access_token));
     })
     .catch(err=>{
+        console.log(err);
         dispatch(logoutUser());
     })
 }
