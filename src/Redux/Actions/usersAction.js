@@ -58,7 +58,7 @@ export const contactUsRequest = (data)=>(dispatch)=>{
     };
     var myError={
         err:false,
-        message:'Weak Internet Connection, could not sent request , please try again',
+        message:'Weak Internet Connection, could not sent request ,try after some time',
         color:'red'
     }
     
