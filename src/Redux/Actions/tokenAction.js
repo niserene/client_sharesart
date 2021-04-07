@@ -1,7 +1,6 @@
 import { logoutUser,getUserInfo } from './authAction'
 import ACTIONS from './index'
-
-const serverUrl = 'http://localhost:5000/'
+import {serverUrl} from './credentials'
 
 export const setToken = (token)=>{
     return{
