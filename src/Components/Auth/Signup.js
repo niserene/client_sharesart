@@ -138,12 +138,12 @@ class Signup extends React.Component{
             state['email']='';
             state['emailErr'] = '';
             state['passwordErr'] = '';
-            return state ; 
+            return state;
         })
     }
     responseGoogle(response){
         const tokenId = response.tokenId;
-        // alert("Hello I have been called")
+        alert("Hello I have been called")
         this.props.loginUserGoogle({tokenId});
     
     }
@@ -233,7 +233,14 @@ class Signup extends React.Component{
                         >Login <FaArrowAltCircleRight/>
                         </button>
 
-                       
+                        <GoogleLogin
+                        clientId="997686510784-53d5e99bgj65lqm6lungl54gaj5c6f5r.apps.googleusercontent.com"
+                        buttonText="Login with Google"
+                        onSuccess={this.responseGoogle}
+                        onFailure={this.responseGoogle}
+                        cookiePolicy={'single_host_origin'}
+                        // className="googleBtn"
+                        />
                     </div>
                 
                 </div>
@@ -318,7 +325,14 @@ class Signup extends React.Component{
                     </div>
 
                     <div className="form-item">
-                
+                    <GoogleLogin
+                        clientId="997686510784-53d5e99bgj65lqm6lungl54gaj5c6f5r.apps.googleusercontent.com"
+                        buttonText="Signup with Google"
+                        onSuccess={this.responseGoogle}
+                        onFailure={this.responseGoogle}
+                        cookiePolicy={'single_host_origin'}
+                        // className="googleBtn"
+                    />
                     </div>
                 </div>       
                 </div> 
