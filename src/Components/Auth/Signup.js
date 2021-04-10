@@ -138,7 +138,7 @@ class Signup extends React.Component{
             state['email']='';
             state['emailErr'] = '';
             state['passwordErr'] = '';
-            return state;
+            return state ; 
         })
     }
     responseGoogle(response){
