@@ -37,6 +37,6 @@ export const getTime  = (data)=>{
 
 export const getDate = (data)=>{
     
-    var date = day[data.getDate()].toUpperCase()+"-"+data.getFullYear().toString()+" "+month[data.getMonth()]+" "+data.getDate().toString();
+    var date = day[data.getDate()]+"-"+data.getFullYear().toString()+" "+month[data.getMonth()]+" "+data.getDate().toString();
     return date
 }

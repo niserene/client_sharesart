@@ -233,14 +233,14 @@ class Signup extends React.Component{
                         >Login <FaArrowAltCircleRight/>
                         </button>
 
-                        <GoogleLogin
+                        {/* <GoogleLogin
                         clientId="997686510784-53d5e99bgj65lqm6lungl54gaj5c6f5r.apps.googleusercontent.com"
                         buttonText="Login with Google"
                         onSuccess={this.responseGoogle}
                         onFailure={this.responseGoogle}
                         cookiePolicy={'single_host_origin'}
                         // className="googleBtn"
-                        />
+                        /> */}
                     </div>
                 
                 </div>
@@ -325,14 +325,14 @@ class Signup extends React.Component{
                     </div>
 
                     <div className="form-item">
-                    <GoogleLogin
+                    {/* <GoogleLogin
                         clientId="997686510784-53d5e99bgj65lqm6lungl54gaj5c6f5r.apps.googleusercontent.com"
                         buttonText="Signup with Google"
                         onSuccess={this.responseGoogle}
                         onFailure={this.responseGoogle}
                         cookiePolicy={'single_host_origin'}
                         // className="googleBtn"
-                    />
+                    /> */}
                     </div>
                 </div>       
                 </div> 
