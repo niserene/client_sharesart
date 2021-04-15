@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import './Signup.css'
 import {FaUserAlt, FaEnvelope, FaKey, FaEye, FaEyeSlash, FaArrowAltCircleRight} from 'react-icons/fa';
 import {isEmail, isLength, goodSignup, goodSignin } from '../utils/Validation/Validation';
-import {GoogleLogin} from 'react-google-login'
+// import {GoogleLogin} from 'react-google-login'
 
 const Eye = ({value,change})=>{
     return (!value?<FaEye onClick={change} className="input-icon ml5"/> : <FaEyeSlash onClick={change} className="input-icon ml5" />)
